@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/carritocompra"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/codigo"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+    <EditText
+        android:id="@+id/etcodigo"
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:inputType="number"
+        android:hint="@string/codigo"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion"
+
+        android:textStyle="bold"
+
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+    <EditText
+        android:id="@+id/etdescrion"
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:inputType="text"
+        android:hint="@string/descripcion"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/precio"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+    <EditText
+        android:id="@+id/etprecio"
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/precio"
+        android:layout_height="wrap_content"/>
+ <Button
+     android:id="@+id/guardar"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="guardar"
+     />
+    <Button
+        android:id="@+id/consultarcodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="consultar por codigo "
+        />
+    <Button
+        android:id="@+id/condultadescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="consultar por descripcion"
+        />
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="baja por codigo"
+        />
+    <Button
+        android:id="@+id/modificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="modificacion"
+        />
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="salir"
+        />
+    <Button
+        android:id="@+id/nuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nuevo"
+        />
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

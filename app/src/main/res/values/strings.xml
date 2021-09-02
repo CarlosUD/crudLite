@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App_itca</string>
+    <string name="titulo">Crud SqLite</string>
+    <string name="codigo">ingrese un codigo</string>
+    <string name="descripcion"> Ingrese una descripcion</string>
+    <string name="precio">Ingrese un precio</string>
+
+</resources>
